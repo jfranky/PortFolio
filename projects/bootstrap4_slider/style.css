@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* scollbar */
+body{
+	overflow: auto;
+}
+::-webkit-scrollbar{
+	background: #000000;
+	transition: .3s;
+}
+body::-webkit-scrollbar-track {
+	background: #40474e; 
+}
+
+body::-webkit-scrollbar-thumb {
+	background: rgb(255, 255, 255); 
+	border-radius: 3px;
+  }
+
+body{
+	overflow-x: hidden;
+	font-family: 'Lato', sans-serif;
+	color: #505962;
+}
+
+.offset:before{
+	height: 3.8rem;
+	margin-top: -3.8rem;
+	content: "";
+	display: block;
+}
+
+/*navbar*/
+
+.navbar{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: .9rem;
+	letter-spacing: .1rem;
+	background: rgba(0,0,0,.6)!important;
+	margin-bottom: 30px
+}
+
+.navbar-brand span{
+	text-transform: initial;
+	font-size: .5em;
+}
+div ul li a{
+	padding-left: 20px;
+	color: white;
+}
+
+.navbar-brand img{
+	height: 2rem;
+}
+.navbar-nav{
+	align-items: center;
+	line-height: 2rem;
+}
+
+.navbar-nav li{
+	padding-right: 0.7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+	color: white;
+	padding-top: .8rem; 
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+	color: #1ebba3;
+}
+
+.collapse a:hover{
+	color: #807e7e;
+	text-decoration: none;
+	text-shadow: .1rem .1rem .1rem rgb(255, 254, 254);
+	transition: .2s;
+	
+}
+/*slider*/
+
+
+.carousel-item{
+	height: 100vh;
+	background-repeat: no-repeat;
+ 	align-items: center
+}
+
+.carousel-inner{
+	height: 100%;
+}
+/* .carousel-item{
+	
+} */
+.carousel-caption{
+	position: absolute;
+	top: 38%;
+	text-transform: uppercase;
+	width: 100%;
+	left: 0;
+	right: 0;
+}
+
+.carousel-caption h1{
+	font-size: 3.8rem;
+	font-weight: 700;
+	letter-spacing: .3rem;
+	color: rgb(0, 0, 0);
+	text-shadow: .1rem .1rem .25rem rgb(255, 254, 254);
+	padding-bottom: 1rem;
+}
+
+.carousel-caption h3{
+	font-size: 2rem;
+	text-shadow: .1rem .1rem .1rem rgb(255, 255, 255);
+	padding-bottom: 1.6rem;
+	color: rgb(0, 0, 0);
+}
+
+.btn-lg{
+	border-width: medium;
+	border-radius: 0;
+	font-size: 1.1rem;
+	color:	white;
+	border-color: rgb(32, 32, 32);
+	background: rgb(32, 32, 32);
+	border-radius: 4px;
+	transition: .5s;
+	opacity: .7;
+}
+
+/* services */
+
+#course li{
+	list-style-type: none;
+}
+
+.narrow{
+	width: 75%;
+	margin: 0 auto;
+	padding-top: 2rem;
+}
+
+
+.jumbotron{
+	border-radius: 0;
+	padding: 3rem 0 2rem;
+	margin-bottom: 0;
+}
+
+.heading{
+	font-size: 1.9rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.heading-underline{
+	width: 3rem;
+	height: .2rem;
+	background-color: grey;
+	margin: 3rem auto;
+}
+
+/*portfolio*/
+.portfolio img{
+	max-width: 100%;
+	max-height: 600px;
+	padding: 0;
+	margin: 0;
+	transition: transform .5s ease;
+	/* border: 5px solid #505962 */
+}
+
+.portfolio img:hover{
+	transform: scale(1.1);
+	cursor: zoom-in;
+}
+
+/* team */
+
+.portfolio{
+	overflow: hidden;
+}
+
+.card{
+	margin:2rem;
+	
+}
+
+.card img{
+	max-height: 337px;
+}
+
+
+/*contact*/	
+footer{
+	background-color: #40474e;
+	color: white;
+	padding: 2rem 0 3rem;
+	margin-top: 1rem;
+	margin-bottom: 0;
+
+}
+
+footer img{
+	height: 3rem;
+	margin: 1.5rem 0;
+}
+
+footer a{
+	color: white;
+}
+
+footer .fa{
+	font-size: 1.8rem;
+	margin: 1.2rem .5rem 0 0;
+}
+
+footer .fa:hover{
+	color: grey;
+	transition: .4s;
+}
+
+.socket{
+	border-top: .2rem solid #666b71;
+	width: 100%;
+}
+
+.updates form{
+	background-color: #40474e!important;
+}
+
+.updates{
+	display: flex;
+}
+
+.updates form{
+	background: white;
+	color: #000000
+}
+
+.updates input{
+	font-size: .9em
+}
+
+.updates button{
+	margin-top: 2%;
+	border-radius: 3px;
+	outline: none;
+	background-color: #505962;
+	color: white; 
+}
+
+.updates button:hover{
+	transform: scaleZ(2);
+}
+/*media queries*/
+
+@media (max-width: 767px){
+	.carousel-caption h1{
+	font-size: 2.3rem;
+	letter-spacing: .15rem;
+	padding-bottom: .5rem;
+	}
+
+	.carousel-caption h3{
+	font-size: 1.2rem;
+	padding-bottom: 1.2rem;
+	
+	}
+
+	.btn-lg{
+	
+	font-size: 1rem;
+	
+	}
+	.narrow h1{
+		font-size: 1.5rem;
+	}
+	p.lead{
+		font-size: 1rem;
+	}
+	}
+
+
+
+/*custom css, dont delete*/
+.i{
+	max-width: 50px;
+}
+
+.navbar-brand{
+	font-size: 30px;
+	text-transform: uppercase;
+	color: white;
+}
+
+
+/* sun */
+/* .sun {
+    width: 2px;
+	height: 2px;
+	border: 1px solid black;
+	padding-left: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow:
+        0 0 60px 30px #fff,  /* inner white */
+        /* 0 0 100px 60px #f0f, middle magenta */
+        /* 0 0 140px 90px #0ff; outer cyan */
+/* } */ 

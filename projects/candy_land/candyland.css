@@ -1,0 +1,56 @@
+body{
+    background: #f5d9d5;
+}
+#mainNavbar .navbar-brand{
+	color: #EA1C2C;
+
+}
+#mainNavbar{
+	font-size: 1.5rem;
+	font-weight: 100;
+}
+#mainNavbar .nav-link{
+	color: white;
+}
+#mainNavbar .nav-link:hover{
+	color: #EA1C2C;
+}
+.text-white span{
+	color:#EA1C2C;
+}
+.text-white h2{
+	font-size: 4rem; 
+	color:whitesmoke;
+	font-weight: 100;
+}
+@media(max-width: 1200px){
+	.text-white h2{
+		font-size: 3rem; 
+		color: whitesmoke;
+		font-weight: 100;
+}
+}
+.class_name_for_h2_p h2{
+	font-weight: 100;
+	color: #EA1C2C;
+}
+.class_name_for_h2_p p{
+	font-size: 1.0rem;
+	font-weight: 100;
+	color: #e85dba;
+	line-height: 1.5;
+
+}
+.content{
+	margin-top: 100px;
+}
+p{
+	font-size: 1.0rem;
+	font-weight: 100;
+	color: #e85dba;
+	line-height: 1.5;
+}
+.navbar.scrolled{
+	background:#e665e6;
+	transition: 200ms;
+}
